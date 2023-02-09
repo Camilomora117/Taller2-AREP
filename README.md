@@ -1,6 +1,6 @@
-# AREP Laboratorio 1
+# AREP Laboratorio 2
 
-Api que consulta la información de Películas a través de una servidor que se conecta con una API de www.omdbapi.com expuesta en internet.
+Servidor web que soporte múlltiples solicitudes seguidas (no concurrentes). El servidor puede leer los archivos del disco local y retornar todos los archivos solicitados, incluyendo páginas html, archivos java script, css e imágenes. 
 
 ## Iniciando
 
@@ -15,7 +15,7 @@ Api que consulta la información de Películas a través de una servidor que se 
 Descargamos el archivo .zip o lo clonamos con el comando:
 
 ```
-git clone https://github.com/Camilomora117/Taller1-AREP.git
+git clone https://github.com/Camilomora117/Taller2-AREP.git
 ```
 
 Una vez descargado el repositorio nos dirigimos al directorio raiz del proyecto y ejecutamos el comando:
