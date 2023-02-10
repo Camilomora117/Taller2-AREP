@@ -5,8 +5,10 @@ const promise = new Promise(function(resolve, reject) {
     resolve('hey!');
 });
 
+
 //Ejemplo
 const cows = 9;
+
 
 //Constructor
 const countCows = new Promise(function(resolve, reject) {
@@ -17,9 +19,16 @@ const countCows = new Promise(function(resolve, reject) {
     }
 });
 
-//Usamos la promesa con then
-countCows.then(result => {
-    console.log(result);
-}).catch(error => {
-    console.log(error);
-}).finally(() => console.log('Finally'));
+var changeColor = function (){
+
+    boton = document.getElementById("button");
+
+    if (boton.style.color == "black"){
+
+        boton.style.color = "yellow" ;
+
+    }else{
+        boton.style.color = "black";
+    }
+
+}

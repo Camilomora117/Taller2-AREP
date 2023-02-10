@@ -1,5 +1,7 @@
 package edu.escuelaing.arem.ASE.app.services;
 
+import java.io.IOException;
+
 public interface RestService {
 
     /**
@@ -12,6 +14,6 @@ public interface RestService {
      * Metodo que obtiene el Body del archivo
      * @return Body en String
      */
-    public String getResponse();
+    public String getResponse() throws IOException;
 
 }

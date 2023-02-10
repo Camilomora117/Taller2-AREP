@@ -100,15 +100,18 @@ public class HttpServer {
      * @param serviceName Service name
      * @return String service
      */
-    public static String executeService(String serviceName) {
-        String header = "", body = "";
-        try {
+    public static String executeService(String serviceName) throws IOException {
+        String body, header;
+        if (services.containsKey(serviceName) ) {
             RestService rs = services.get(serviceName);
             header = rs.getHeader();
             body = rs.getResponse();
-        } catch (Exception e) {
-            System.out.println("Error");
+        } else {
+            RestService rs = services.get("/404");
+            header = rs.getHeader();
+            body = rs.getResponse();
         }
+
         return header + body;
     }
 

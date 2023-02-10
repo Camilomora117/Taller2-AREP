@@ -12,28 +12,11 @@ import java.io.IOException;
 public class RestJPGService implements RestService {
     @Override
     public String getHeader() {
-        return "HTTP/1.1 200 OK\r\n" +
-                "Content-type: image/jpg\r\n" +
-                "\r\n";
+        return "";
     }
 
     @Override
-    public String getResponse() {
-        String file;
-        try {
-            file = getImage();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return file;
-    }
-
-    /**
-     * Metodo para leer bytes de imagen jpg
-     * @return String que representan la imagen
-     * @throws IOException Excepciones
-     */
-    static String getImage() throws IOException{
+    public String getResponse() throws IOException {
         String response = "HTTP/1.1 200 OK\r\n"
                 + "Content-Type: image/jpg\r\n"
                 + "\r\n";
@@ -46,5 +29,7 @@ public class RestJPGService implements RestService {
         dataOutputStream.write(byteArrayOutputStream.toByteArray());
         return response;
     }
+
+
 
 }

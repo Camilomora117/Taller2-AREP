@@ -21,11 +21,36 @@ git clone https://github.com/Camilomora117/Taller2-AREP.git
 Una vez descargado el repositorio nos dirigimos al directorio raiz del proyecto y ejecutamos el comando:
 
 ```
-mvn exec:java
+mvn clean package exec:java
 ```
 
 Finalmente ingrese al navegador de su preferencia y usamos el link (El cual es el localhost que corre por el puerto 35000):
 http://localhost:35000
+
+#Para usar los servicios
+Si desea usar los servicios necesita las siguientes rutas
+
+```
+http://localhost:35000/apps/index.html
+```
+
+```
+http://localhost:35000/apps/style.css
+```
+
+```
+http://localhost:35000/apps/imagen.jpg
+```
+
+```
+http://localhost:35000/apps/app.js
+```
+
+Ademas una pagina web donde involucra todos los archivos:
+
+```
+http://localhost:35000/apps/pagina.html
+```
 
 ## Documentación
 
